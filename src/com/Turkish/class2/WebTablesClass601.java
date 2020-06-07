@@ -13,7 +13,7 @@ public class WebTablesClass601 extends MyBase {
 	public static void main(String[] args) {
 
 		drivers("chrome");
-		driver.get("http://seleniumeasy.com/test/table-search-filter-demo.html");
+		driver.get("http://jiravm.centralus.cloudapp.azure.com:8081/table-search-filter-demo.html");
 
 		// identifiying the number of rows and columns
 

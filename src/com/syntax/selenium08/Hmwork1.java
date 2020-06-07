@@ -1,5 +1,7 @@
 package com.syntax.selenium08;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -23,32 +25,49 @@ public class Hmwork1 extends MyBase{
 		driver.findElement(By.id("ctl00_MainContent_password")).sendKeys("test");
 		driver.findElement(By.id("ctl00_MainContent_login_button")).click();
 		
+		List<WebElement> rows=driver.findElements(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr"));
 		
-		WebElement Susan=driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr[6]/td[2]"));
-		System.out.println(Susan.isDisplayed());
 		
-		WebElement CDetail=driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr[6]/td[13]"));
-		CDetail.click();
-        WebElement name=driver.findElement(By.cssSelector("input[id='ctl00_MainContent_fmwOrder_txtName']"));
-		name.clear();
-		name.sendKeys("Susan Malkoc");
-		driver.findElement(By.cssSelector("input[value='Visa']")).click();
 		
-		 WebElement  date=driver.findElement(By.cssSelector("input[id='ctl00_MainContent_fmwOrder_TextBox1']"));
-		date.clear();
-		date.sendKeys("04/23");
-		driver.findElement(By.cssSelector("a[id='ctl00_MainContent_fmwOrder_UpdateButton']")).click();
-
-		WebElement Row6=driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr[6]"));
 		
-		String text=Row6.getText();
-		if(text.contains("Susan Malkoc") && text.contains("04/23")) {
-			System.out.println("Test case Pass");
-		}else {
-			System.out.println("Failed");
-		}
-			
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		WebElement Susan=driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr[6]/td[2]"));
+//		System.out.println(Susan.isDisplayed());
+//		
+//		WebElement CDetail=driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr[6]/td[13]"));
+//		CDetail.click();
+//        WebElement name=driver.findElement(By.cssSelector("input[id='ctl00_MainContent_fmwOrder_txtName']"));
+//		name.clear();
+//		name.sendKeys("Susan Malkoc");
+//		driver.findElement(By.cssSelector("input[value='Visa']")).click();
+//		
+//		 WebElement  date=driver.findElement(By.cssSelector("input[id='ctl00_MainContent_fmwOrder_TextBox1']"));
+//		date.clear();
+//		date.sendKeys("04/23");
+//		driver.findElement(By.cssSelector("a[id='ctl00_MainContent_fmwOrder_UpdateButton']")).click();
+//
+//		WebElement Row6=driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr[6]"));
+//		
+//		String text=Row6.getText();
+//		if(text.contains("Susan Malkoc") && text.contains("04/23")) {
+//			System.out.println("Test case Pass");
+//		}else {
+//			System.out.println("Failed");
+//		}
+//			
+//		
 		
 		
 }

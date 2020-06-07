@@ -18,7 +18,7 @@ public class LoginTest extends CommonMethods{
 	 sendText(username,ConfigsReader.getProperty("username"));
 	 
 	 
-	 WebElement password=driver.findElement(by)
+	
 	
 	
 }}

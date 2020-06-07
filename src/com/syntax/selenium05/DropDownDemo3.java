@@ -18,6 +18,8 @@ public class DropDownDemo3 extends BaseClass{
 		
 		Select select=new Select(continents);
 		select.selectByValue("AUS");
+		//select.selectByIndex(1);
+		
 		
 		List<WebElement>optionList=select.getOptions();
 		

@@ -44,7 +44,7 @@ public class Facebook extends CommonMethods{
 		
 		
 		List<WebElement> gender=driver.findElements(By.cssSelector("span[data-type=radio]"));
-		clickRadiOrCheckbox(gender, "Female");
+		clickRadioOrCheckbox(gender, "Female");
 		Thread.sleep(5000);
 		tearDown();
 		
